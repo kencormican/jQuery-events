@@ -1,7 +1,9 @@
 $(document).ready(function() {
- 
+     
+//   the .on("click", function())  is the same as the .click( function())
+//   Also available are mouseenter() and mouseleave() methods  
 
- 	$("#stream1_btn").on("click", function() {
+ 	$("#stream2_btn").click(function() {
  		$(".stream1").removeClass('highlight_stream');
 		$(".stream2").removeClass('highlight_stream');
 		$(".stream3").removeClass('highlight_stream');
@@ -19,6 +21,4 @@ $(document).ready(function() {
 		$(".stream3").removeClass('highlight_stream');
 	  	$(".stream3").addClass('highlight_stream');
 	});
-
-
-}); 
+});
